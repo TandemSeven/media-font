@@ -61,18 +61,10 @@ code {
 
 pre {
   background: #f6f6f6;
+  border: 1px solid #ccc;
+  overflow-y: hidden;
+  overflow-x: auto;
   padding: 20px;
-}
-
-code {
-  background: #ffd;
-}
-
-hr {
-  border: 0 solid #ccc;
-  border-top-width: 1px;
-  clear: both;
-  height: 0;
 }
 
 a {
@@ -81,6 +73,15 @@ a {
 
 small {
   font-size: 75%;
+}
+
+hr {
+  border: 0 dashed #ccc;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 /*
@@ -155,10 +156,11 @@ figure {
 
 /*
 ================================================================================
-Wrapper & Callout.
+Notice, Wrapper, Callout.
 ================================================================================
 */
 
+.notice,
 .wrapper,
 .callout {
   overflow: hidden;
@@ -168,13 +170,23 @@ Wrapper & Callout.
   padding-right: 20px;
 }
 
+.notice,
 .callout {
-  background: #eee;
-  font-family: "Lobster Two", cursive;
   margin-bottom: 20px;
+}
+
+.callout {
+  background: #ffe;
+  border: 1px solid #ccc;
+  font-family: "Lobster Two", cursive;
 
   /* 20px */
   font-size: 2.0rem;
+}
+
+.notice {
+  background: #fee;
+  border: 1px solid #963;
 }
 
 /*

@@ -22,6 +22,23 @@
 
 <div class="wrapper">
 
+  <div class="notice">
+    <p>
+      Apparently, this is basically unnecessary. <i>Oops!</i>
+    </p>
+    <p>
+      Done correctly, browsers won't unnecessarily download custom fonts, if they aren't used outside the scope of their respectives <code>@media</code> queries.
+    </p>
+    <p>
+      If you're curious, check out this conversation on Twitter:
+      <a href="https://twitter.com/zachleat/status/644944306097119232">[1]</a>,
+      <a href="https://twitter.com/zachleat/status/644958131160662017">[2]</a>,
+      <a href="https://twitter.com/nathansmith/status/644958740941148166">[3]</a>.
+    </p>
+  </div>
+
+  <hr />
+
   <h1>
     (Don't) Load Font Based on Media Query
   </h1>
@@ -97,9 +114,11 @@
     Initially, I tried this&hellip;
   </p>
 
-  <p>
-    <code>&lt;link rel="stylesheet" href="&hellip;" media="(min-width: 768px)" /&gt;</code>
-  </p>
+<pre>&lt;link
+  rel="stylesheet"
+  media="(min-width: 768px)"
+  href="https://fonts.googleapis.com/css?family=Open+Sans"
+/&gt;</pre>
 
   <hr />
 
