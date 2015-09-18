@@ -52,6 +52,13 @@ body {
 
   /* 16px */
   font-size: 1.6rem;
+
+  /* Force long text to wrap. */
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  /* Non standard for WebKit */
+  word-break: break-word;
 }
 
 pre,
@@ -65,6 +72,14 @@ pre {
   overflow-y: hidden;
   overflow-x: auto;
   padding: 20px;
+
+  /* Force long text to wrap. */
+  -ms-word-break: keep-all;
+  word-break: keep-all;
+
+  /* Non standard for WebKit */
+  word-break: keep-all;
+
 }
 
 a {
